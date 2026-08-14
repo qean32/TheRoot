@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Root } from "./component/master/root"
+import { Test } from "./page"
 
 export const Router = () => {
     return (
@@ -7,7 +8,7 @@ export const Router = () => {
             <Root>
 
                 <Routes>
-                    <Route element={<>zxc</>} path="/" />
+                    <Route element={<Test />} path="/" />
                 </Routes>
             </Root>
         </BrowserRouter>

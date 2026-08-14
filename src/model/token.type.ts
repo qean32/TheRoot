@@ -1,5 +1,5 @@
 import type { Id } from "./id.type";
 
-export type Point = {
+export type Token = {
     img: string
 } & Id

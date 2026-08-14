@@ -1,6 +1,6 @@
 import { useStore } from "./use-store"
 
-export const usePoint = () => {
+export const useToken = () => {
     const { pointStore } = useStore()
 
     return pointStore

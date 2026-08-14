@@ -1,10 +1,10 @@
-import { PointStore } from "./point";
+import { FieldStore } from "./field";
 
 export class RootStore {
-    pointStore: PointStore;
+    field: FieldStore;
 
     constructor() {
-        this.pointStore = new PointStore();
+        this.field = new FieldStore();
     }
 }
 
