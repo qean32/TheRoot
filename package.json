@@ -16,6 +16,8 @@
         "@types/js-cookie": "^3.0.6",
         "jest-environment-jsdom": "^30.4.1",
         "js-cookie": "^3.0.8",
+        "mobx": "^7.0.0",
+        "mobx-react-lite": "^5.0.0",
         "react": "^19.2.7",
         "react-content-loader": "^7.1.2",
         "react-dom": "^19.2.7",

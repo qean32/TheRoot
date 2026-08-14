@@ -1,3 +1,8 @@
 export default {
-    testEnvironment: 'jest-environment-jsdom',
-}
+    preset: 'ts-jest',
+    testEnvironment: 'node',
+
+    moduleNameMapper: {
+        '^@/(.*)$': '<rootDir>/src/$1',
+    },
+};

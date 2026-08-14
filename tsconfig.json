@@ -9,10 +9,17 @@
         }
     ],
     "compilerOptions": {
+        "jsx": "react-jsx",
         "types": [
             "jest",
             "node"
         ],
-        // другие настройки
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "esModuleInterop": true,
+        "erasableSyntaxOnly": false
     }
 }

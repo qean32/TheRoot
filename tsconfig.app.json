@@ -23,18 +23,6 @@
             "@/*": [
                 "./src/*"
             ],
-            "@component/*": [
-                "./src/component/*"
-            ],
-            "@lib/*": [
-                "./src/lib/*"
-            ],
-            "@service/*": [
-                "./src/service/*"
-            ],
-            "@config/*": [
-                "./src/config/*"
-            ]
         },
         /* Linting */
         "noUnusedLocals": true,
@@ -43,6 +31,7 @@
         "noFallthroughCasesInSwitch": true
     },
     "include": [
-        "src"
-, "__test__"    ]
+        "src",
+        "__test__"
+    ]
 }
