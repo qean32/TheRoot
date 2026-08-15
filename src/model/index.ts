@@ -1,3 +1,5 @@
-export type { Id } from '@/model/id.type'
-export type { Link } from '@/model/link.type'
-export type { Token } from '@/model/token.type'
+export type { idType } from '@/model/id.type'
+export type { linkType } from '@/model/link.type'
+export type { tokenType } from '@/model/token.type'
+export type { childrenProps } from '@/model/children-props'
+export type { coordinateType, positionType } from '@/model/position.type'

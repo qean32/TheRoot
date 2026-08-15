@@ -1,7 +1,7 @@
-import { dataThemeAttribute, Themes, type _Themes } from "@/config"
-import { setTheme } from "./"
+import { Themes, type ThemesType } from "@/config"
+import { isDarkTheme, setTheme } from "./"
 
 export const swapTheme = () => {
-    setTheme(document.documentElement.getAttribute(dataThemeAttribute) == Themes.light
-        ? Themes.dark : Themes.light)
+    setTheme(isDarkTheme()
+        ? Themes.light : Themes.dark)
 }

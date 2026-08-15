@@ -1,11 +1,11 @@
-import type { Colors } from "@/config";
-import type { Id } from "./id.type";
-import type { Token } from "./token.type";
+import type { ColorsType } from "@/config";
+import type { idType } from "./id.type";
+import type { tokenType } from "./token.type";
 
-export type Link = {
-    tokens: Token[],
+export type linkType = {
+    tokens: tokenType[],
     name: string
     description: string
-    color: Colors
+    color: ColorsType
     // type отвечает за "узор" линии
-} & Id
+} & idType

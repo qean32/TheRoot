@@ -1,5 +1,9 @@
-import type { Id } from "./id.type";
+import type { idType } from "./id.type";
+import type { coordinateType } from "./position.type";
 
-export type Token = {
-    img: string
-} & Id
+export type tokenType = {
+    name: string
+    path: string
+    description: string
+    position: coordinateType
+} & idType

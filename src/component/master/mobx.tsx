@@ -1,4 +1,4 @@
-import { StoreContext } from "@/lib/hook/use-store";
+import { StoreContext } from "@/lib/hook";
 import { RootStore } from "@/store/root";
 import { useMemo } from "react";
 

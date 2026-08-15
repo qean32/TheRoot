@@ -1,22 +1,24 @@
 import type { ToastOptions } from 'react-toastify';
 
-
-type availableColors = "red" | "blue"
-export const Colors: { [key in availableColors]: string } = {
-    red: "",
-    blue: ""
-}
-export type Colors = (typeof Colors)[keyof typeof Colors]
+export const Colors = {
+    red: "red",
+    blue: "blue"
+} as const
+export type ColorsType = (typeof Colors)[keyof typeof Colors]
 
 export const Themes = {
     dark: "dark",
     light: "light"
 } as const
-export type _Themes = (typeof Themes)[keyof typeof Themes]
+export type ThemesType = (typeof Themes)[keyof typeof Themes]
 
 export const toastConfig: ToastOptions = {
     hideProgressBar: true
 }
+
+export const title = {
+    MAIN: "Главная"
+} as const
 
 export const dataThemeAttribute = "data-theme"
 

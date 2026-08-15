@@ -8,5 +8,6 @@ export function useStore() {
     if (!store) {
         throw new Error('useStore должен использоваться внутри StoreProvider');
     }
+
     return store;
 }

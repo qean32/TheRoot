@@ -1,16 +1,16 @@
 import { getRandom } from '@/lib/utils';
-import type { Link, Token } from '@/model';
+import type { linkType, tokenType } from '@/model';
 import { makeAutoObservable } from 'mobx';
 
 export class FieldStore {
-    tokens: Token[] = []
-    links: Link[] = []
+    tokens: tokenType[] = []
+    links: linkType[] = []
 
     constructor() {
         makeAutoObservable(this);
     }
 
-    createToken(token: Omit<Token, "id">) {
+    createToken(token: Omit<tokenType, "id">) {
         this.tokens.push({ ...token, id: getRandom() })
     }
 
@@ -18,7 +18,7 @@ export class FieldStore {
         this.tokens.filter(item => item.id != id)
     }
 
-    createLink(link: Omit<Link, "id">) {
+    createLink(link: Omit<linkType, "id">) {
         if (link.tokens.length != 2) {
             return
         }
