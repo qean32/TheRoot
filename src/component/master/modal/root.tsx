@@ -16,8 +16,7 @@ export const Root: FC<Props> = ({
         <ModalContext.Provider value={{
             toggle: swap, view: boolean, off
         }}>
-            <div className=""></div>
-            <div className="">{children}</div>
+            {children}
         </ModalContext.Provider>
     )
 }

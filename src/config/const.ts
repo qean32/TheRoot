@@ -12,6 +12,12 @@ export const Themes = {
 } as const
 export type ThemesType = (typeof Themes)[keyof typeof Themes]
 
+export const Source = {
+    online: "online",
+    offline: "offline",
+}
+export type SourceType = (typeof Source)[keyof typeof Source]
+
 export const toastConfig: ToastOptions = {
     hideProgressBar: true
 }

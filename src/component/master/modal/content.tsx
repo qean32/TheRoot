@@ -20,13 +20,13 @@ export const Content: FC<childrenProps> = ({ children }: childrenProps) => {
 
             <div className={cn(
                 "shadow z-50",
-                !context.view && 'shadow-close'
+                !context.view && "shadow-close"
             )} onClick={context.toggle} style={{ zIndex: 100 }}>
             </div>
 
             <div className={cn(
-                'flex w-full h-full justify-center items-center',
-                (context.view ? open : close)
+                "flex w-full h-full justify-center items-center",
+                (context.view ? "modal-open" : "modal-close")
             )}>
                 {children}
             </div>
