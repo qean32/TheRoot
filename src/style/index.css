@@ -1,7 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+    --color-primary: #1C1C1C;
+    --color-primary-light: #CFCFCF;
+
+    --color-primary-dark: #bababa;
+    --color-primary-dark-light: #ececec;
+
+    --color-primary-darkness: #080808;
+    --color-primary-darkness-light: #535353;
+
+    --color-primary-light: #363636;
+    --color-primary-light-light: #ececec;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-.main-bg {
-    @apply dark:bg-dark  bg-white
+.bg-main {
+    @apply dark:bg-primary bg-primary-light
+}
+
+body {
+    @apply dark:bg-primary bg-primary-light
 }

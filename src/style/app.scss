@@ -1,7 +1,12 @@
+@use "castom/modal.scss";
+@use "castom/input.scss";
+@use "core.scss";
+
 #root {
-    min-height: 100vh;
+    flex: 1;
 }
 
 body {
-    all: unset !important
+    min-height: 100vh;
+    display: flex;
 }

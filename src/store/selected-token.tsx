@@ -1,7 +1,7 @@
 import type { tokenType } from '@/model';
 import { makeAutoObservable } from 'mobx';
 
-export class TokenStore {
+export class SelectedTokenStore {
     token: tokenType | null = null
 
     constructor() {

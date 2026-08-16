@@ -1,13 +1,13 @@
 import { FieldStore } from "./field";
-import { TokenStore } from "./token";
+import { SelectedTokenStore } from "./selected-token";
 
 export class RootStore {
     field: FieldStore;
-    token: TokenStore;
+    selectedToken: SelectedTokenStore;
 
     constructor() {
         this.field = new FieldStore();
-        this.token = new TokenStore();
+        this.selectedToken = new SelectedTokenStore();
     }
 }
 
