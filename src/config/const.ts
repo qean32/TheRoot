@@ -18,6 +18,10 @@ export const Source = {
 }
 export type SourceType = (typeof Source)[keyof typeof Source]
 
+export const FieldMenu = {
+}
+export type FieldMenuType = (typeof FieldMenu)[keyof typeof FieldMenu]
+
 export const toastConfig: ToastOptions = {
     hideProgressBar: true
 }

@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 @theme {
     --color-primary: #1C1C1C;
-    --color-primary-light: #CFCFCF;
+    --color-primary-_light: #CFCFCF;
 
-    --color-primary-dark: #bababa;
+    --color-primary-dark: #181818;
     --color-primary-dark-light: #ececec;
 
     --color-primary-darkness: #080808;
@@ -12,14 +14,41 @@
 
     --color-primary-light: #363636;
     --color-primary-light-light: #ececec;
+
+    --color-brand: whitesmoke;
+    --color-brand-light: #080808;
 }
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-.bg-main {
-    @apply dark:bg-primary bg-primary-light
+.bg-primary {
+    @apply dark:bg-primary bg-primary-_light
+}
+
+.bg-primary-dark {
+    @apply dark:bg-primary-dark bg-primary-dark-light
+}
+
+.bg-primary-darkness {
+    @apply dark:bg-primary-darkness bg-primary-darkness-light
+}
+
+.bg-primary-light {
+    @apply dark:bg-primary-light bg-primary-light-light
 }
 
 body {
     @apply dark:bg-primary bg-primary-light
+}
+
+.text-color {
+    color: var(--color-text-color);
+}
+
+* {
+    transition: .4s background-color;
+    @apply dark:text-brand text-brand-light;
+    font-family: "Iosevka Charon", monospace;
+    font-weight: 500;
+    font-style: normal;
 }

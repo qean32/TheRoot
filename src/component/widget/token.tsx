@@ -1,4 +1,5 @@
 import { useToken } from "@/lib/hook";
+import { getScale } from "@/lib/utils";
 import type { tokenType } from "@/model";
 import { useMemo, type FC } from "react";
 import { Circle, Group } from "react-konva";
@@ -18,7 +19,7 @@ export const Token: FC<tokenType> = (item: tokenType) => {
         item.position,
         item.path
     )
-    const scale = useMemo(() => image ? 100 : 0, [item, image])
+    const scale = useMemo(() => image ? getScale(image.height, image.width) : 0, [item, image])
 
     return (
         <Group
