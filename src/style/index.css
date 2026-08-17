@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 @theme {
     --color-primary: #1C1C1C;
@@ -51,4 +51,21 @@ body {
     font-family: "Iosevka Charon", monospace;
     font-weight: 500;
     font-style: normal;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+:root {
+    --icon-color: currentColor;
+    --icon-size: 1.25rem;
+}
+
+[data-theme="dark"] {
+    --icon-color: #ffffff;
+}
+
+[data-theme="light"] {
+    --icon-color: #000000;
 }

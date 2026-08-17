@@ -1,2 +1,5 @@
 export { Button } from './button'
 export { Input } from './input'
+export { } from './logo'
+export { Icon } from './icon'
+export { MenuItem } from './menu-item'
